@@ -1,0 +1,49 @@
+@font-face
+{
+    font-family: 'Neutra';
+    src: url('../fonts/Neutra-Bold.otf') format('otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Neutra';
+    src: url('../fonts/Neutra-Book.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    font-family: 'Neutra', sans-serif;
+    color: var(--color-text-dark);
+    line-height: 1.5;
+}
+
+.heading-primary
+{
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.heading-secondary
+{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.heading-tertiary
+{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.body-text
+{
+    font-size: 1.1rem;
+    max-width: 65ch;
+}
