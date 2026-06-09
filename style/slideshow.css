@@ -2,9 +2,14 @@
 
 .slideshow-container
 {
-  max-width: 1000px;
   position: relative;
   margin: auto;
+  display: flex;
+}
+
+.mySlides
+{
+  position: relative;
 }
 
 .prev, .next
@@ -40,7 +45,6 @@
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
   width: 100%;
   text-align: center;
 }
