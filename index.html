@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zinvol & Solidair</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
       <!-- Navigatie -->
@@ -21,22 +22,22 @@
     <div class="slideshow-container">
         <div class="mySlides fade">
             <img src="assets/placeholder.png" style="width:100%">
-            <div class="text">Zinvol & Solidair</div>
+            <div class="slideshow-text">Zinvol & Solidair</div>
         </div>
 
         <div class="mySlides fade">
             <img src="assets/placeholder.png" style="width:100%">
-            <div class="text">Ecologie</div>
+            <div class="slideshow-text">Ecologie</div>
         </div>
 
         <div class="mySlides fade">
             <img src="assets/placeholder.png" style="width:100%">
-            <div class="text">Armoede</div>
+            <div class="slideshow-text">Armoede</div>
         </div>
 
         <div class="mySlides fade">
             <img src="assets/placeholder.png" style="width:100%">
-            <div class="text">Inclusief begraven en gedenken</div>
+            <div class="slideshow-text">Inclusief begraven en gedenken</div>
         </div>
 
         <!-- Next and previous buttons -->
@@ -53,30 +54,9 @@
     <span class="dot" onclick="currentSlide(4)"></span>
     </div>
 
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 3000);
-        }
-    </script>
 
     <div class="text-homepage">
-        <img src="" alt="">
+        <img src="assets/placeholder2.jpg">
         <h1>Wie zijn wij?</h1>
         <p>ORBIT vzw bouwt verder op de waardevolle traditie van interlevensbeschouwelijke ontmoeting en dialoog. Tegelijk willen we een stap verder gaan. Vanuit concrete noden in buurten en gemeenschappen brengen we mensen uit verschillende levensbeschouwingen samen om ook gezamenlijk actie te ondernemen. Zo werken we rond thema’s zoals zorg voor de natuur, inclusieve vormen van gedenken en de strijd tegen armoede, met als doel meer solidariteit, verbondenheid en maatschappelijke impact.</p>
     </div>
