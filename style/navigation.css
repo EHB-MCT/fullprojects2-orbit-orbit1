@@ -1,0 +1,36 @@
+.nav{
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+}
+
+.nav img
+{
+    width: 150px;
+    padding: 0;
+}
+
+.nav #zinvol {background-color: #F7F4D5;}
+.nav #ecologie {background-color: #d1deb9;}
+.nav #armoede {background-color: #A3E5FF;}
+.nav #begraven {background-color: #d712f5;}
+.nav #archief {background-color: #DF5151;}
+
+.nav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #000;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+}
+
+.nav a #logo:hover 
+{
+    background-color: transparent;
+}
