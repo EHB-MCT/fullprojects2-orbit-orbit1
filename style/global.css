@@ -7,3 +7,21 @@ body
 {
     display: flex;
 }
+
+.text-homepage svg{
+    border-radius: 2173.407px;
+    background: #FFC629;
+}
+
+/*Responsive*/
+@media screen and (max-width: 768px) {
+  .text-homepage {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text-homepage img {
+    max-width: 100%;
+    height: auto;
+  }
+}
