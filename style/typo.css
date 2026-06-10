@@ -1,23 +1,22 @@
 @font-face
 {
-    font-family: 'Neutra';
-    src: url('../fonts/Neutra-Bold.otf') format('otf');
+    font-family: Neutra;
+    src: url('/fonts/Neutra-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face 
 {
-    font-family: 'Neutra';
-    src: url('../fonts/Neutra-Book.otf') format('otf');
+    font-family: Neutra;
+    src: url('/fonts/Neutra-Book.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 body
 {
-    font-family: 'Neutra', sans-serif;
-    color: var(--color-text-dark);
+    font-family: Neutra;
     line-height: 1.5;
 }
 
@@ -46,4 +45,24 @@ body
 {
     font-size: 1.1rem;
     max-width: 65ch;
+}
+
+/*Responsive*/
+@media screen and (max-width: 768px) {
+  .heading-primary {
+    font-size: 2rem;
+  }
+
+  .heading-secondary {
+    font-size: 1.8rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1.4rem;
+  }
+
+  .body-text {
+    font-size: 1rem;
+    padding: 0 10px; 
+  }
 }
