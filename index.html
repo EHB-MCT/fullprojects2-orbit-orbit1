@@ -1,88 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zinvol & Solidair</title>
-    <link rel="stylesheet" href="style/style.css">
-    <script src="main.js" defer></script>
-</head>
-<body>
-      <!-- Navigatie -->
-    <nav class="nav">
-        <div class="logo">
-            <a href="index.html"><img src="assets/logo.png"></a>
-        </div>
-        <a class="active" id="home" href="index.html">Home</a>
-        <a href="zinvol.html" id="zinvol">Wat is Zinvol & Solidair?</a>
-        <a href="ecologie.html" id="ecologie">Ecologie</a>
-        <a href="armoede.html" id="armoede">Armoede</a>
-        <a href="begraven.html" id="begraven">Inclusief begraven & gedenken</a>
-        <a href="archief.html" id="archief">Archief</a>
-    </nav>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zinvol & Solidair</title>
+		<link rel="stylesheet" href="style/style.css" />
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<!-- Navigatie -->
+		<nav class="nav">
+			<div class="logo">
+				<a href="index.html"><img src="assets/logo.png" /></a>
+			</div>
+			<a class="active" id="home" href="index.html">Home</a>
+			<a href="zinvol.html" id="zinvol">Wat is Zinvol & Solidair?</a>
+			<a href="ecologie.html" id="ecologie">Ecologie</a>
+			<a href="armoede.html" id="armoede">Armoede</a>
+			<a href="begraven.html" id="begraven">Inclusief begraven & gedenken</a>
+			<a href="archief.html" id="archief">Archief</a>
+		</nav>
 
-    <!-- Caroussel -->
-    <div class="slideshow-container">
-        <div class="mySlides">
-            <div class="rect-slider">
-                <svg xmlns="http://www.w3.org/2000/svg" width="456" height="647" viewBox="0 0 456 647" fill="none">
-                <path d="M456 647L270.18 0H-61V647H456Z" fill="#F7F4D5"/>
-                </svg>
-            </div>
-            <img src="assets/placeholder.png" style="width:100%">
-            <div class="slideshow-text">Zinvol & Solidair</div>
-        </div>
+		<!-- Caroussel -->
+		<div class="slideshow-container">
+			<div class="mySlides">
+				<div class="rect-slider">
+					<svg xmlns="http://www.w3.org/2000/svg" width="456" height="647" viewBox="0 0 456 647" fill="none">
+						<path d="M456 647L270.18 0H-61V647H456Z" fill="#F7F4D5" />
+					</svg>
+				</div>
+				<img src="assets/placeholder.png" style="width: 100%" />
+				<div class="slideshow-text">Zinvol & Solidair</div>
+			</div>
 
-        <div class="mySlides">
-            <div class="rect-slider">
-                <svg xmlns="http://www.w3.org/2000/svg" width="456" height="647" viewBox="0 0 456 647" fill="none">
-                <path d="M456 647L270.18 0H-61V647H456Z" fill="#9DBA68"/>
-                </svg>
-            </div>
-            <img src="assets/placeholder.png" style="width:100%">
-            <div class="slideshow-text">Ecologie</div>
-        </div>
+			<div class="mySlides">
+				<div class="rect-slider">
+					<svg xmlns="http://www.w3.org/2000/svg" width="456" height="647" viewBox="0 0 456 647" fill="none">
+						<path d="M456 647L270.18 0H-61V647H456Z" fill="#9DBA68" />
+					</svg>
+				</div>
+				<img src="assets/placeholder.png" style="width: 100%" />
+				<div class="slideshow-text">Ecologie</div>
+			</div>
 
-        <div class="mySlides">
-            <div class="rect-slider">
-                <svg xmlns="http://www.w3.org/2000/svg" width="456" height="647" viewBox="0 0 456 647" fill="none">
-                <path d="M456 647L270.18 0H-61V647H456Z" fill="#A3E5FF"/>
-                </svg>
-            </div>
-            <img src="assets/placeholder.png" style="width:100%">
-            <div class="slideshow-text">Armoede</div>
-        </div>
+			<div class="mySlides">
+				<div class="rect-slider">
+					<svg xmlns="http://www.w3.org/2000/svg" width="456" height="647" viewBox="0 0 456 647" fill="none">
+						<path d="M456 647L270.18 0H-61V647H456Z" fill="#A3E5FF" />
+					</svg>
+				</div>
+				<img src="assets/placeholder.png" style="width: 100%" />
+				<div class="slideshow-text">Armoede</div>
+			</div>
 
-        <div class="mySlides">
-            <div class="rect-slider">
-                <svg xmlns="http://www.w3.org/2000/svg" width="456" height="647" viewBox="0 0 456 647" fill="none">
-                <path d="M456 647L270.18 0H-61V647H456Z" fill="#d712f5"/>
-                </svg>
-            </div>
-            <img src="assets/placeholder.png" style="width:100%">
-            <div class="slideshow-text">Inclusief begraven en gedenken</div>
-        </div>
+			<div class="mySlides">
+				<div class="rect-slider">
+					<svg xmlns="http://www.w3.org/2000/svg" width="456" height="647" viewBox="0 0 456 647" fill="none">
+						<path d="M456 647L270.18 0H-61V647H456Z" fill="#d712f5" />
+					</svg>
+				</div>
+				<img src="assets/placeholder.png" style="width: 100%" />
+				<div class="slideshow-text">Inclusief begraven en gedenken</div>
+			</div>
 
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
 
-    <!-- The dots/circles -->
-    <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-    </div>
+		<!-- The dots/circles -->
+		<div class="dot-container">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+		</div>
 
-
-    <div class="text-homepage">
-        <svg src="assets/ellipse-7.svg" width=2173.407px height=1139.664px></svg>
-        <img src="assets/placeholder2.jpg">
-        <h1>Wie zijn wij?</h1>
-        <p>ORBIT vzw bouwt verder op de waardevolle traditie van interlevensbeschouwelijke ontmoeting en dialoog. Tegelijk willen we een stap verder gaan. Vanuit concrete noden in buurten en gemeenschappen brengen we mensen uit verschillende levensbeschouwingen samen om ook gezamenlijk actie te ondernemen. Zo werken we rond thema’s zoals zorg voor de natuur, inclusieve vormen van gedenken en de strijd tegen armoede, met als doel meer solidariteit, verbondenheid en maatschappelijke impact.</p>
-    </div>
-    
-</body>
+		<div class="text-homepage">
+			<svg src="assets/ellipse-7.svg" width="2173.407px" height="1139.664px"></svg>
+			<img src="assets/placeholder2.jpg" />
+			<h1>Wie zijn wij?</h1>
+			<p>
+				ORBIT vzw bouwt verder op de waardevolle traditie van interlevensbeschouwelijke ontmoeting en dialoog. Tegelijk willen we een stap verder
+				gaan. Vanuit concrete noden in buurten en gemeenschappen brengen we mensen uit verschillende levensbeschouwingen samen om ook gezamenlijk
+				actie te ondernemen. Zo werken we rond thema’s zoals zorg voor de natuur, inclusieve vormen van gedenken en de strijd tegen armoede, met als
+				doel meer solidariteit, verbondenheid en maatschappelijke impact.
+			</p>
+		</div>
+	</body>
 </html>
