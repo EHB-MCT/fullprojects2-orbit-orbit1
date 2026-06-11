@@ -98,8 +98,8 @@
 h2 {
 	position: absolute;
 	top: 150px;
-	left: 50px;
-	text-align: center;
+	left: 35px;
+	text-align: left;
 	max-width: 300px;
 }
 
@@ -114,4 +114,7 @@ h2 {
 #mapTitle {
 	top: 275px;
 	margin-top: 20px;
+}
+#mapDescription {
+	top: 305px;
 }
