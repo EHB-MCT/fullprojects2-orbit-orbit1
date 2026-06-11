@@ -86,4 +86,16 @@
 }
 .mapOverlay {
 	width: 40%;
+	position: relative;
+}
+
+.mapOverlay p {
+	position: absolute;
+	top: 150px;
+	left: 50px;
+	text-align: center;
+}
+
+map #mapAddress {
+	top: 200px;
 }
