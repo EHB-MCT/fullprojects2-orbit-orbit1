@@ -88,14 +88,27 @@
 	width: 40%;
 	position: relative;
 }
+.mapOverlay h2 {
+	font-size: 2.2rem;
+	font-weight: bold;
+}
 
-.mapOverlay p {
+.mapOverlay p,
+h2 {
 	position: absolute;
 	top: 150px;
 	left: 50px;
 	text-align: center;
 }
 
-map #mapAddress {
-	top: 200px;
+#mapAddress {
+	top: 225px;
+}
+
+#mapDate {
+	top: 250px;
+}
+
+#mapTitle {
+	top: 275px;
 }
