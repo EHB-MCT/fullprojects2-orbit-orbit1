@@ -1,25 +1,27 @@
-.aanmoediging {
-  display: flex;
-  justify-content: space-between;
+.armoede-content {
+	display: flex;
+	flex-direction: column;
 }
-.container1 {
-  display: flex;
-  flex-direction: row-reverse;
+
+.armoede-text1,
+.quote,
+.armoede-text2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
- 
-.container2 {
-  display: flex;
-  flex-direction: row-reverse;
+.armoede-text1,
+.armoede-text2 {
+	width: 40%;
 }
-.text-armoede,
-.text2-armoede {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
+.quote {
+	flex-direction: row-reverse;
 }
- 
-.text2-armoede {
-  padding: 30px 50px 50px 30px;
-  border-radius: 20px;
-  background-color: #a3e5ff;
+
+/*
+.armoede-text2 {
+	padding: 30px 50px 50px 30px;
+	border-radius: 20px;
+	background-color: #a3e5ff;
 }
+*/
