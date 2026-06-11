@@ -73,6 +73,17 @@
 	z-index: 999;
 	transform-box: fill-box;
 }
-svg #_Layer_{
+#_Layer_ {
 	padding-top: 100px;
+}
+
+.mapContainer {
+	display: flex;
+}
+
+.map {
+	width: 60%;
+}
+.mapOverlay {
+	width: 40%;
 }
