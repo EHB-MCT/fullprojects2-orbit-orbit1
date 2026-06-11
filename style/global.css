@@ -9,7 +9,7 @@ body {
     margin-top: 0;
     background-size: cover; 
     background-repeat: no-repeat;
-    padding: 50px 20%; 
+    padding: 50px;
 }
 
 .text-content {
@@ -21,7 +21,15 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 20px;
 }
+
+.footer-back{
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-right-radius: 61px;
+}
+
 .contact-gegevens {
   text-align: left;
 }
@@ -35,6 +43,7 @@ footer {
  
 .pagina-gegevens a {
   padding: 20px;
+  color: black;
 }
 .media {
   display: flex;

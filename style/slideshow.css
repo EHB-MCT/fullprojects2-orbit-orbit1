@@ -20,24 +20,22 @@
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  width: 38%;
   bottom: 0;
   z-index: 1;
   pointer-events: none;
-  overflow: hidden;
 }
 
 .rect-slider svg {
   height: 100%;
-  width: auto;
+  width: 100%;
   display: block;
-  opacity: 70%;
 }
 
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 35% !important;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -59,20 +57,6 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.slideshow-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #f2f2f2;
-  font-size: 52px;
-  font-weight: bold;
-  text-align: center;
-  white-space: nowrap;
-  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
-  z-index: 2;
-}
-
 .dot {
   cursor: pointer;
   height: 15px;
@@ -86,11 +70,11 @@
 }
 
 .dot-container {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
+  position: relative;
+  top: -40px;
+  margin-bottom: -40px;
   text-align: center;
-  z-index: 5;
+  z-index: 10;
 }
 
 .active, .dot:hover {
@@ -105,4 +89,76 @@
 @keyframes fade {
   from { opacity: 0.4; }
   to   { opacity: 1;   }
+}
+
+.slider-content {
+  position: absolute;
+  top: 70% !important;
+  left: 5%; 
+  transform: translateY(-50%); 
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  text-align: left;
+  z-index: 5;
+  width: 25%; 
+}
+
+.slider-content h2 {
+  font-size: 34px; 
+  margin: 0 0 10px 0;
+  font-family: 'Neutra', sans-serif;
+  color: #000; 
+  line-height: 1.1;
+}
+
+.slider-content p {
+  font-size: 18px;
+  margin: 0 0 25px 0;
+  color: #000; /* Zwarte letters */
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.btn-ontdek {
+  display: inline-block;
+  padding: 12px 28px;
+  color: #000; 
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px; 
+  
+  background-color: rgba(0, 0, 0, 0.08); 
+  transition: all 0.3s ease;
+}
+
+.btn-ontdek:hover {
+  background-color: rgba(0, 0, 0, 0.15); /* Wordt ietsje donkerder als je erover muist */
+  transform: scale(1.03); 
+}
+
+/*Responsive*/
+@media screen and (max-width: 768px) {
+  .rect-slider {
+    width: 85%; /* Op een gsm moet de SVG veel breder zijn om alle tekst te omvatten */
+  }
+  
+  .slider-content {
+    width: 75%; 
+    left: 8%;
+  }
+  
+  .slider-content h2 {
+    font-size: 32px;
+  }
+  
+  .slider-content p {
+    font-size: 16px;
+  }
+
+  .btn-ontdek {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 }
