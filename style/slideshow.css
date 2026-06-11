@@ -115,7 +115,7 @@
 .slider-content p {
   font-size: 18px;
   margin: 0 0 25px 0;
-  color: #000; /* Zwarte letters */
+  color: #000;
   font-weight: 500;
   line-height: 1.4;
 }
@@ -134,14 +134,14 @@
 }
 
 .btn-ontdek:hover {
-  background-color: rgba(0, 0, 0, 0.15); /* Wordt ietsje donkerder als je erover muist */
+  background-color: rgba(0, 0, 0, 0.15);
   transform: scale(1.03); 
 }
 
 /*Responsive*/
 @media screen and (max-width: 768px) {
   .rect-slider {
-    width: 85%; /* Op een gsm moet de SVG veel breder zijn om alle tekst te omvatten */
+    width: 85%;
   }
   
   .slider-content {
