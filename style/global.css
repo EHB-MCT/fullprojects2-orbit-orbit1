@@ -8,10 +8,13 @@ body {
     justify-content: flex-end; 
     margin-top: 0;
     background-size: cover; 
-    background-position: top left;
     background-repeat: no-repeat;
-    
-    padding: 50px 10%; 
+    padding: 50px 20%; 
+}
+
+.text-content {
+    width: 45%;
+    z-index: 2;
 }
 
 footer {
