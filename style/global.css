@@ -17,55 +17,211 @@ body {
     z-index: 2;
 }
 
+/*Footer*/
+
+.footer-back {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 120px 10% 40px 10%; 
+  border-radius: 60px 60px 0 0;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 20px;
+  align-items: flex-start; 
+  padding-bottom: 30px;
 }
 
-.footer-back{
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-top-right-radius: 61px;
+.contact-gegevens ul, .pagina-gegevens ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.contact-gegevens {
-  text-align: left;
+.contact-gegevens p {
+  margin: 20px 0 5px 0;
+  font-weight: 500;
 }
-.bereikbaar {
+
+.contact-gegevens li {
+  margin-bottom: 5px;
+}
+
+.contact-gegevens a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-gegevens a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  align-self: center; 
+}
+
+.footer-logo img {
+  width: 120px;          
+  height: auto;
+  display: block;
+  filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.1));
+}
+
+.bereikbaar p {
+  margin: 20px 0 10px 0;
   text-align: right;
+  font-weight: 500;
 }
+
+.media {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 20px;
+}
+
+.social-icon svg {
+  width: 32px;
+  height: 32px;
+  fill: #000;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.social-icon:hover svg {
+  transform: scale(1.15);
+  fill: #555; 
+}
+
 .pagina-gegevens ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
- 
-.pagina-gegevens a {
-  padding: 20px;
+
+.pagina-gegevens li {
+  display: flex;
+  align-items: center;
   color: black;
 }
-.media {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.pagina-gegevens li:not(:last-child)::after {
+  content: "•";
+  margin: 0 15px;
+  color: black;
 }
-.media p {
-  padding: 10px;
-  background-color: grey;
+
+.pagina-gegevens a {
+  color: black;
+  text-decoration: underline;
+}
+
+/*Pagina Wat is Zinvol & Solidair?*/
+.zinvol-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 60px;
+}
+
+.zinvol-text {
+    width: 55%;
+}
+
+.zinvol-video {
+    width: 40%; 
+}
+
+.video-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #e0e0e0;
+    border: 2px dashed #999;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.accordion {
+    margin-top: 40px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    color: #DF5151;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.accordion-header:hover {
+    color: #b53d3d;
+}
+
+.accordion-header .icon {
+    font-size: 24px;
+    margin-right: 15px;
+    font-weight: bold;
+    width: 20px;
+    display: inline-block;
+}
+
+.accordion-content {
+    display: none;
+    padding-bottom: 20px;
+    padding-left: 35px;
 }
 
 /*Responsive*/
 @media screen and (max-width: 768px) {
-    .text-homepage {
-        justify-content: center;
-        padding: 40px 20px;
-    }
+  .footer-back {
+    padding-top: 80px;
+  }
 
-    .text-content {
+  footer {
+    flex-direction: column; 
+    align-items: center;
+    gap: 35px;
+  }
+  
+  .contact-gegevens, .bereikbaar p {
+    text-align: center;
+  }
+
+  .media {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .pagina-gegevens ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .zinvol-container {
+        flex-direction: column; /* Zet de tekst en video onder elkaar op een GSM */
+        padding: 40px 20px;
+        gap: 40px;
+    }
+    .zinvol-text, .zinvol-video {
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.85); 
-        padding: 20px;
-        border-radius: 15px;
     }
 }

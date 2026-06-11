@@ -24,6 +24,7 @@ html, body {
   margin-left: auto;
 }
 
+.nav #home {background-color: #D9D9D9;}
 .nav #zinvol  { background-color: #F7F4D5; }
 .nav #ecologie { background-color: #d1deb9; }
 .nav #armoede  { background-color: #A3E5FF; }
