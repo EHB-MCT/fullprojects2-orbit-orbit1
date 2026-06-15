@@ -95,7 +95,7 @@
 }
 
 .mapOverlay p,
-h2 {
+.mapContainer h2 {
 	position: absolute;
 	top: 150px;
 	left: 35px;

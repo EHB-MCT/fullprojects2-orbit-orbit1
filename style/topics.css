@@ -1,27 +1,120 @@
-.armoede-content {
-	display: flex;
-	flex-direction: column;
+.topic-container {
+    padding: 60px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    overflow: hidden;
 }
 
-.armoede-text1,
-.quote,
-.armoede-text2 {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.armoede-text1,
-.armoede-text2 {
-	width: 40%;
-}
-.quote {
-	flex-direction: row-reverse;
+.bg-ecologie { background-color: #9DBA68; } 
+.bg-begraven { background-color: #d712f5; } 
+
+.topic-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
 }
 
-/*
-.armoede-text2 {
-	padding: 30px 50px 50px 30px;
-	border-radius: 20px;
-	background-color: #a3e5ff;
+.topic-quote-box {
+    width: 1%; 
+    margin-left: -10%; 
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25%;
 }
-*/
+
+.topic-text {
+    width: 45%;
+}
+
+.topic-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.topic-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 50px;
+    gap: 50px;
+    background-color: #A3E5FF;
+}
+
+.project-text {
+    width: 45%;
+}
+
+.project-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.project-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.btn-actie {
+    display: inline-block;
+    background-color: #0081B4;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.btn-actie:hover {
+    background-color: #005f80;
+    transform: translateY(-2px);
+}
+
+.project-images {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.project-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.img-wide {
+    grid-column: span 2; 
+    aspect-ratio: 21 / 9;
+}
+
+
+/*Responsive*/
+@media screen and (max-width: 768px) {
+    .topic-row, .project-card {
+        flex-direction: column;
+    }
+    
+    .topic-quote-box {
+        width: 100%;
+        border-radius: 20px;
+        margin-left: 0;
+        padding: 40px 20px;
+    }
+
+    .topic-text, .project-text, .project-images {
+        width: 100%;
+    }
+}

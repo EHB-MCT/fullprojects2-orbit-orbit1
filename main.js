@@ -1,7 +1,11 @@
+//index.html
 let slideIndex = 0;
 let slideshowTimer;
 
-showSlides();
+let checkSlides = document.getElementsByClassName("mySlides");
+if (checkSlides.length > 0) {
+  showSlides();
+}
 
 function showSlides() {
   let i;
@@ -39,3 +43,22 @@ function currentSlide(n) {
   slideIndex = n - 1;
   showSlides();
 }
+
+//zinvol.html
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', function() {
+        
+        const content = this.nextElementSibling;
+        const icon = this.querySelector('.icon');
+
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            icon.textContent = "+"; 
+        } else {
+            content.style.display = "block";
+            icon.textContent = "-"; 
+        }
+    });
+});
