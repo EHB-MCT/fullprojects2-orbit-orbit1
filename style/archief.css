@@ -118,3 +118,7 @@ h2 {
 #mapDescription {
 	top: 305px;
 }
+
+.clickableEvent {
+	padding: 0;
+}
