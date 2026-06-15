@@ -11,17 +11,17 @@
 
 .topic-row {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 50px;
 }
 
 .topic-quote-box {
-    width: 45%; 
+    width: 1%; 
     margin-left: -10%; 
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 25%;
 }
 
 .topic-text {
@@ -29,7 +29,7 @@
 }
 
 .topic-text h2 {
-    font-size: 38px;
+    font-size: 36px;
     margin-bottom: 20px;
     color: #000;
 }

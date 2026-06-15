@@ -17,6 +17,10 @@ body {
     z-index: 2;
 }
 
+.text-content p{
+  font-size: 15px;
+}
+
 /*Footer*/
 .footer-back {
   background-size: cover;
@@ -33,27 +37,27 @@ footer {
   padding-bottom: 30px;
 }
 
-.contact-gegevens ul, .pagina-gegevens ul {
+.contact-data ul, .page-data ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.contact-gegevens p {
+.contact-data p {
   margin: 20px 0 5px 0;
   font-weight: 500;
 }
 
-.contact-gegevens li {
+.contact-data li {
   margin-bottom: 5px;
 }
 
-.contact-gegevens a {
+.contact-data a {
   color: #000;
   text-decoration: none;
 }
 
-.contact-gegevens a:hover {
+.contact-data a:hover {
   text-decoration: underline;
 }
 
@@ -71,7 +75,7 @@ footer {
   filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.1));
 }
 
-.bereikbaar p {
+.accessibility p {
   margin: 20px 0 10px 0;
   text-align: right;
   font-weight: 500;
@@ -95,7 +99,7 @@ footer {
   fill: #555; 
 }
 
-.pagina-gegevens ul {
+.page-data ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -104,19 +108,19 @@ footer {
   margin: 0;
 }
 
-.pagina-gegevens li {
+.page-data li {
   display: flex;
   align-items: center;
   color: black;
 }
 
-.pagina-gegevens li:not(:last-child)::after {
+.page-data li:not(:last-child)::after {
   content: "•";
   margin: 0 15px;
   color: black;
 }
 
-.pagina-gegevens a {
+.page-data a {
   color: black;
   text-decoration: underline;
 }
@@ -200,7 +204,7 @@ footer {
     gap: 35px;
   }
   
-  .contact-gegevens, .bereikbaar p {
+  .contact-data, .accessibility p {
     text-align: center;
   }
 
@@ -209,7 +213,7 @@ footer {
     margin-bottom: 20px;
   }
 
-  .pagina-gegevens ul {
+  .page-data ul {
     flex-direction: column;
     align-items: center;
     gap: 15px;
