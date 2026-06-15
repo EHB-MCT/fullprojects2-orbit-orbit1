@@ -1,68 +1,61 @@
-@font-face
-{
-    font-family: Neutra;
-    src: url('/fonts/Neutra-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
+@font-face {
+	font-family: Neutra;
+	src: url("/fonts/Neutra-Bold.otf") format("opentype");
+	font-weight: bold;
+	font-style: normal;
 }
 
-@font-face 
-{
-    font-family: Neutra;
-    src: url('/fonts/Neutra-Book.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+	font-family: Neutra;
+	src: url("/fonts/Neutra-Book.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
 }
 
-body
-{
-    font-family: Neutra;
-    line-height: 1.5;
+body {
+	font-family: Neutra;
+	line-height: 1.5;
 }
 
-.heading-primary
-{
-    font-size: 2.8rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+.heading-primary {
+	font-size: 2.8rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
 }
 
-.heading-secondary
-{
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+.heading-secondary {
+	font-size: 2.2rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
 }
 
-.heading-tertiary
-{
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin-bottom: 0.8rem;
+.heading-tertiary {
+	font-size: 1.6rem;
+	font-weight: bold;
+	margin-bottom: 0.8rem;
 }
 
-.body-text
-{
-    font-size: 1.1rem;
-    max-width: 65ch;
+.body-text {
+	font-size: 1.1rem;
+	max-width: 65ch;
 }
 
 /*Responsive*/
 @media screen and (max-width: 768px) {
-  .heading-primary {
-    font-size: 2rem;
-  }
+	.heading-primary {
+		font-size: 2rem;
+	}
 
-  .heading-secondary {
-    font-size: 1.8rem;
-  }
+	.heading-secondary {
+		font-size: 1.8rem;
+	}
 
-  .heading-tertiary {
-    font-size: 1.4rem;
-  }
+	.heading-tertiary {
+		font-size: 1.4rem;
+	}
 
-  .body-text {
-    font-size: 1rem;
-    padding: 0 10px; 
-  }
+	.body-text {
+		font-size: 1rem;
+		padding: 0 10px;
+	}
 }
