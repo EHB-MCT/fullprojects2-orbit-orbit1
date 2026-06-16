@@ -30,7 +30,7 @@ html, body {
 .nav #ecologie { background-color: #d1deb9; }
 .nav #armoede  { background-color: #A3E5FF; }
 .nav #begraven { background-color: #A764B1; }
-.nav #archief  { background-color: #DF5151; }
+.nav #evenementen  { background-color: #DF5151; }
 
 .nav a {
   text-align: center;
@@ -75,7 +75,7 @@ html, body {
 }
 
 .text-content {
-    width: 45%;
+    width: 40%;
     z-index: 2;
 }
 
@@ -279,6 +279,26 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo a {
+    padding: 15px;
+  }
+
+  .nav #home {
+    margin-left: 0;
+  }
+
+  .nav a {
+    width: 100%; 
+    border-radius: 0 !important;
+    white-space: normal;
   }
 
   .zinvol-container {

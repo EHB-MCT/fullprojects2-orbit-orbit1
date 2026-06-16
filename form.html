@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inschrijvingsformulier</title>
     <link rel="stylesheet" href="style/style.css">
-    <script src="main.js" defer></script>
+    <script src="form.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
@@ -26,7 +26,45 @@
         <a href="archief.html" id="archief">Archief</a>
     </nav>
 
-    
+    <canvas id="bg-canvas"></canvas>
+
+        <div class="form-container">
+            <div class="form-card">
+                <h2>Blijf op de hoogte!</h2>
+                <p>Laat je gegevens achter om als eerste op de hoogte te zijn van evenementen en acties rond onze thema's.</p>
+                
+                <form id="orbitForm">
+                    <div class="input-group">
+                        <label for="naam">Naam</label>
+                        <input type="text" id="naam" placeholder="Vul je voor- en achternaam in" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="postcode">Postcode of gemeente</label>
+                        <input type="text" id="postcode" placeholder="Bv. 1000 Brussel" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="email">E-mailadres</label>
+                        <input type="email" id="email" placeholder="jouw@email.be" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="interesse">Ik heb interesse in:</label>
+                        <select id="interesse">
+                            <option value="alles">Alle thema's</option>
+                            <option value="armoede">Armoede</option>
+                            <option value="ecologie">Ecologie</option>
+                            <option value="begraven">Inclusief begraven & gedenken</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-actie" style="width: 100%; text-align: center;">Hou me op de hoogte</button>
+                    
+                    <p id="success-msg" class="hidden-msg">Bedankt! Je gegevens zijn lokaal opgeslagen.</p>
+                </form>
+            </div>
+        </div>
 
 <div class="footer-back" style="background-image: url('assets/footerimg.png');">
     <footer>
