@@ -3,17 +3,6 @@
 	stroke: #a3e5ff;
 }
 
-.cls-1,
-.cls-2,
-.cls-3,
-.cls-4,
-.cls-5 {
-	stroke-miterlimit: 10;
-	transform-origin: center;
-	transform-box: fill-box;
-	transition: transform 0.3s;
-}
-
 .cls-2 {
 	fill: #d712f5;
 	stroke: #d712f5;
@@ -37,42 +26,6 @@
 	stroke: #d1deb9;
 }
 
-.cls-1:hover {
-	filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
-	opacity: 0.8;
-	transform-origin: center;
-	z-index: 999;
-	transform-box: fill-box;
-}
-
-.cls-2:hover {
-	filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
-	opacity: 0.8;
-	transform-origin: center;
-	z-index: 999;
-	transform-box: fill-box;
-}
-.cls-3:hover {
-	filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
-	opacity: 0.8;
-	transform-origin: center;
-	z-index: 999;
-	transform-box: fill-box;
-}
-.cls-4:hover {
-	filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
-	opacity: 0.8;
-	transform-origin: center;
-	z-index: 999;
-	transform-box: fill-box;
-}
-.cls-5:hover {
-	filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
-	opacity: 0.8;
-	transform-origin: center;
-	z-index: 999;
-	transform-box: fill-box;
-}
 #_Layer_ {
 	padding-top: 100px;
 }
@@ -120,5 +73,16 @@
 }
 
 .clickableEvent {
-	padding: 0;
+	stroke-miterlimit: 10;
+	transform-origin: center;
+	transform-box: fill-box;
+	transition: transform 0.3s;
+}
+
+.clickableEvent:hover {
+	filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
+	opacity: 0.8;
+	transform-origin: center;
+	z-index: 999;
+	transform-box: fill-box;
 }
