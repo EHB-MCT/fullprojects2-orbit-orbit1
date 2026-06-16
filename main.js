@@ -1,10 +1,14 @@
-//index.html
+//Slider index.html + banners pages
 let slideIndex = 0;
 let slideshowTimer;
 
 let checkSlides = document.getElementsByClassName("mySlides");
-if (checkSlides.length > 0) {
+
+if (checkSlides.length > 1) {
   showSlides();
+} 
+else if (checkSlides.length === 1) {
+  checkSlides[0].style.display = "block";
 }
 
 function showSlides() {
@@ -19,13 +23,14 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) { slideIndex = 1; }
 
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  if (dots.length > 0) {
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      dots[slideIndex - 1].className += " active";
   }
 
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-
   slideshowTimer = setTimeout(showSlides, 3000);
 }
 
