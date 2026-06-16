@@ -50,27 +50,10 @@
 
 .mapOverlay p,
 .mapContainer h2 {
-	position: absolute;
 	top: 150px;
 	left: 35px;
 	text-align: left;
-	max-width: 300px;
-}
-
-#mapAddress {
-	top: 180px;
-}
-
-#mapDate {
-	top: 210px;
-}
-
-#mapTitle {
-	top: 275px;
-	margin-top: 20px;
-}
-#mapDescription {
-	top: 305px;
+	max-width: 290px;
 }
 
 .clickableEvent {
@@ -86,4 +69,29 @@
 	transform-origin: center;
 	z-index: 999;
 	transform-box: fill-box;
+}
+
+.mapOverlay h1 {
+	margin-left: 35px;
+}
+
+.overlayText {
+	position: absolute;
+	top: 100px;
+	left: 35px;
+	max-width: 290px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 0;
+}
+
+.overlayText h1,
+.overlayText h2,
+.overlayText p {
+	margin: 0;
+}
+
+#mapDescription {
+	padding-top: 0px;
 }
