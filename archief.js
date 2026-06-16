@@ -11,7 +11,7 @@ function updateOverlay(element) {
 	mapDate.innerText = element.dataset.date;
 	mapTitle.innerText = element.dataset.title;
 	mapDescription.innerText = element.dataset.description;
-	mapDescription.style.paddingTop = "40px";
+	mapDescription.style.paddingTop = "10px";
 	themeColor.setAttribute("fill", element.dataset.color);
 }
 
