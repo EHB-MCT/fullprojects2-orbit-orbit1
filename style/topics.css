@@ -83,9 +83,29 @@
     margin-bottom: 30px;
 }
 
+.bg-armoede .btn-actie {
+    background-color: #0081B4;
+}
+.bg-armoede .btn-actie:hover {
+    background-color: #005f80;
+}
+
+.bg-ecologie .btn-actie {
+    background-color: #4A7A3A; 
+}
+.bg-ecologie .btn-actie:hover {
+    background-color: #355e28;
+}
+
+.bg-begraven .btn-actie {
+    background-color: #8E0A9D;
+}
+.bg-begraven .btn-actie:hover {
+    background-color: #63056e;
+}
+
 .btn-actie {
     display: inline-block;
-    background-color: #0081B4;
     color: white;
     padding: 12px 32px;
     border-radius: 8px;
@@ -96,7 +116,6 @@
 }
 
 .btn-actie:hover {
-    background-color: #005f80;
     transform: translateY(-2px);
 }
 

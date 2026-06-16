@@ -1,5 +1,67 @@
-body {
-	margin: 0;
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Navigatie*/
+.nav {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.nav img {
+  width: 150px;
+  display: block;
+  margin: 0;
+}
+
+.nav #home {
+  margin-left: auto;
+}
+
+.nav #home {background-color: #D9D9D9;}
+.nav #zinvol  { background-color: #F7F4D5; }
+.nav #ecologie { background-color: #d1deb9; }
+.nav #armoede  { background-color: #A3E5FF; }
+.nav #begraven { background-color: #A764B1; }
+.nav #archief  { background-color: #DF5151; }
+
+.nav a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #000;
+  white-space: nowrap;
+}
+
+.nav #home{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.nav #archief{
+  border-bottom-right-radius: 5px;
+}
+
+.nav a:hover {
+  font-weight: bold;
+}
+
+.logo{
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.logo a{
+  padding: 5px 25px;
 }
 
 .text-homepage {
