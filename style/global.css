@@ -30,7 +30,7 @@ html, body {
 .nav #ecologie { background-color: #d1deb9; }
 .nav #armoede  { background-color: #A3E5FF; }
 .nav #begraven { background-color: #A764B1; }
-.nav #evenementen  { background-color: #DF5151; }
+.nav #projecten  { background-color: #DF5151; }
 
 .nav a {
   text-align: center;
@@ -50,7 +50,11 @@ html, body {
   border-bottom-right-radius: 5px;
 }
 
-.nav a:hover {
+.nav a:hover{
+  font-weight: bold;
+}
+
+.nav a:active{
   font-weight: bold;
 }
 
