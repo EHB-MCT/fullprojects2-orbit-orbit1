@@ -4,8 +4,8 @@
 }
 
 .cls-2 {
-	fill: #d712f5;
-	stroke: #d712f5;
+	fill: #a764b1;
+	stroke: #a764b1;
 }
 
 .cls-3 {
@@ -35,7 +35,8 @@
 }
 
 .map {
-	width: 60%;
+	width: 100%;
+	padding-right: 10%;
 }
 .mapOverlay {
 	width: 40%;
