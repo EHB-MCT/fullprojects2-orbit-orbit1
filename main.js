@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-//projecten.html
+// projecten.html
 let mapLocation = document.querySelector("#mapLocation");
 let mapAddress = document.querySelector("#mapAddress");
 let mapDate = document.querySelector("#mapDate");
@@ -155,6 +155,10 @@ let mapTitle = document.querySelector("#mapTitle");
 let themeColor = document.querySelector("#themeColor");
 let mapDescription = document.querySelector("#mapDescription");
 let mainTitle = document.querySelector("#mapMainTitle");
+let mapThumbnailContainer = document.getElementById("mapThumbnailContainer");
+let mapThumbnail = document.getElementById("mapThumbnail");
+let currentLightboxImages = [];
+let currentImageIndex = 0;
 
 function updateOverlay(element) {
 	mapLocation.innerText = element.dataset.location;
@@ -164,10 +168,82 @@ function updateOverlay(element) {
 	mapDescription.innerText = element.dataset.description;
 	themeColor.setAttribute("fill", element.dataset.color);
 	mainTitle.innerText = "";
+
+	if (element.dataset.images) {
+        currentLightboxImages = element.dataset.images.split(',').map(img => img.trim());
+		mapThumbnail.src = currentLightboxImages[0];
+		mapThumbnailContainer.style.display = "block"; 
+	} else {
+        currentLightboxImages = [];
+		mapThumbnailContainer.style.display = "none"; 
+	}
 }
 
 document.querySelectorAll(".clickableEvent").forEach(function (region) {
 	region.addEventListener("click", function () {
+		document.querySelectorAll(".clickableEvent").forEach(el => el.classList.remove("active-region"));
+        this.classList.add("active-region");
+        this.parentNode.appendChild(this);
 		updateOverlay(region);
 	});
 });
+
+const lightboxOverlay = document.getElementById('lightboxOverlay');
+const lightboxImage = document.getElementById('lightboxImage');
+const lightboxClose = document.getElementById('lightboxClose');
+const lightboxPrev = document.getElementById('lightboxPrev');
+const lightboxNext = document.getElementById('lightboxNext');
+
+function updateLightboxImage() {
+    lightboxImage.src = currentLightboxImages[currentImageIndex];
+}
+
+if (mapThumbnail) {
+    mapThumbnail.addEventListener('click', function() {
+        if (currentLightboxImages.length > 0) {
+            currentImageIndex = 0; // Begin altijd bij de eerste foto
+            updateLightboxImage();
+            lightboxOverlay.classList.add('show');
+            
+            if(currentLightboxImages.length === 1) {
+                lightboxPrev.style.display = 'none';
+                lightboxNext.style.display = 'none';
+            } else {
+                lightboxPrev.style.display = 'block';
+                lightboxNext.style.display = 'block';
+            }
+        }
+    });
+}
+
+if (lightboxPrev && lightboxNext) {
+    lightboxPrev.addEventListener('click', function(e) {
+        e.stopPropagation();
+        currentImageIndex--;
+        if (currentImageIndex < 0) {
+            currentImageIndex = currentLightboxImages.length - 1;
+        }
+        updateLightboxImage();
+    });
+
+    lightboxNext.addEventListener('click', function(e) {
+        e.stopPropagation(); 
+        currentImageIndex++;
+        if (currentImageIndex >= currentLightboxImages.length) {
+            currentImageIndex = 0;
+        }
+        updateLightboxImage();
+    });
+}
+
+if (lightboxClose) {
+    lightboxClose.addEventListener('click', function() {
+        lightboxOverlay.classList.remove('show');
+    });
+    
+    lightboxOverlay.addEventListener('click', function(e) {
+        if (e.target === lightboxOverlay) {
+            lightboxOverlay.classList.remove('show');
+        }
+    });
+}

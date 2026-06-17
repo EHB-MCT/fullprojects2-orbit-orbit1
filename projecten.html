@@ -29,7 +29,7 @@
 				<a href="ecologie.html" id="ecologie">Ecologie</a>
 				<a href="armoede.html" id="armoede">Armoede</a>
 				<a href="begraven.html" id="begraven">Inclusief begraven & gedenken</a>
-				<a class="active href="projecten.html" id="projecten">Projecten</a>
+				<a class="active" href="projecten.html" id="projecten">Projecten</a>
 			</div>
 		</nav>
 		
@@ -42,7 +42,12 @@
 					<h2 id="mapLocation"></h2>
 					<p id="mapAddress"></p>
 					<p id="mapDate"></p>
-				</div>
+
+				<div id="mapThumbnailContainer">
+        			<img id="mapThumbnail" src="">
+    			</div>
+			</div>
+
 				<svg xmlns="http://www.w3.org/2000/svg" width="456" height="647" viewBox="0 0 456 647" fill="none">
 					<path id="themeColor" d="M456 647L270.18 0H-61V647H456Z" fill="#F7F4D5" />
 				</svg>
@@ -142,6 +147,7 @@
 						data-title="Vier vrede: hoe kunnen we in Dendermonde bouwen aan vrede?"
 						data-description="Hoe kunnen we samen aan vrede werken in Dendermonde?"
 						data-color="#ffce0a"
+						data-images="assets/dendermonde1.png, assets/dendermonde2.jpg"
 						points="480.91 237.87 521.93 265.02 544.4 247.4 531.12 228.26 572.41 219.98 577.84 267.58 563.03 328.85 540.31 322.21 526.01 374.55 535.71 382.72 514.52 410.81 501.55 380.05 487.46 347.65 476.48 330.64 484.48 310.76 464.91 302.88 480.91 292.66 480.91 237.87"
 					/>
 					<path
@@ -162,6 +168,7 @@
 						data-title="Bezoek woonzorgcentra"
 						data-description="Leden van de twee Willebroekse moskeeën en de Sint-Niklaasparochie brachten bezoek aan woonzorgcentra en dagverblijf. Met het initiatief willen ze de band tussen de verschillende geloofsgemeenschappen versterken."
 						data-color="#a3e5ff"
+						data-images="assets/willebroek1.jpeg, assets/willebroek2.jpeg, assets/willebroek3.jpeg"
 						points="572.41 219.98 577.84 260.17 619.71 262.72 633.5 300.51 650.86 282.38 727.71 309.7 720.31 282.13 787.2 263.23 796.91 224.17 727.71 213.19 718.01 241.28 694.27 221.87 659.8 237.19 611.8 213.19 572.41 219.98"
 					/>
 					<polygon
@@ -182,6 +189,7 @@
 						data-title="Samen niet alleen"
 						data-description="Interculturele Iftar"
 						data-color="#ffce0a"
+						data-images="assets/brussel1.png, assets/brussel2.jpg"
 						points="612.82 348.77 655.97 332.17 677.03 383.08 679.97 399.06 657.25 410.81 613.08 391.66 612.82 348.77"
 					/>
 					<path
@@ -274,5 +282,11 @@
 				</ul>
 			</div>
 		</div>
+	<div id="lightboxOverlay">
+		<div id="lightboxClose">X</div>
+		<a class="lightbox-prev" id="lightboxPrev">&#10094;</a>
+		<img id="lightboxImage" src="" class="lightbox-image">
+		<a class="lightbox-next" id="lightboxNext">&#10095;</a>
+	</div>
 	</body>
 </html>
