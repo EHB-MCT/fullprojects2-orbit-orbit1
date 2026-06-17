@@ -35,7 +35,7 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 35% !important;
+  top: 35%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -93,7 +93,7 @@
 
 .slider-content {
   position: absolute;
-  top: 65% !important;
+  top: 65%;
   left: 5%; 
   transform: translateY(-50%); 
   display: flex;
@@ -107,15 +107,15 @@
 .slider-content h2 {
   font-size: 64px; 
   margin: 0 0 10px 0;
-  font-family: 'Neutra', sans-serif;
-  color: #000; 
+  font-family: 'Neutra';
+  color: black; 
   line-height: 1.1;
 }
 
 .slider-content p {
   font-size: 18px;
   margin: 0 0 25px 0;
-  color: #000;
+  color: black;
   font-weight: 500;
   line-height: 1.4;
 }
@@ -123,7 +123,7 @@
 .btn-ontdek {
   display: inline-block;
   padding: 12px 28px;
-  color: #000; 
+  color: black; 
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
@@ -140,25 +140,49 @@
 
 /*Responsive*/
 @media screen and (max-width: 768px) {
+  
+  .mySlides img {
+    height: auto;
+    object-fit: contain;
+  }
+
   .rect-slider {
-    width: 85%;
+    width: 65%;
   }
-  
+
   .slider-content {
-    width: 75%; 
-    left: 8%;
+    width: 60%;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
   }
-  
+
   .slider-content h2 {
-    font-size: 32px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    line-height: 1.1;
   }
-  
+
   .slider-content p {
-    font-size: 16px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 1.3;
   }
 
   .btn-ontdek {
-    font-size: 14px;
-    padding: 10px 20px;
+    font-size: 12px;
+    padding: 6px 14px;
+    pointer-events: auto; 
+    z-index: 100;
+    position: relative;
+  }
+
+  .dot-container {
+    pointer-events: none; 
+  }
+
+  .dot {
+    pointer-events: auto; 
   }
 }

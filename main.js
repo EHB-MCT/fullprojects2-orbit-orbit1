@@ -1,3 +1,13 @@
+//Navigatie
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+}
+
 //Slider index.html + banners pages
 let slideIndex = 0;
 let slideshowTimer;
