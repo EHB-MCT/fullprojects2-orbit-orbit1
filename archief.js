@@ -4,6 +4,7 @@ let mapDate = document.querySelector("#mapDate");
 let mapTitle = document.querySelector("#mapTitle");
 let themeColor = document.querySelector("#themeColor");
 let mapDescription = document.querySelector("#mapDescription");
+let mainTitle = document.querySelector("#mapMainTitle");
 
 function updateOverlay(element) {
 	mapLocation.innerText = element.dataset.location;
@@ -12,6 +13,7 @@ function updateOverlay(element) {
 	mapTitle.innerText = element.dataset.title;
 	mapDescription.innerText = element.dataset.description;
 	themeColor.setAttribute("fill", element.dataset.color);
+	mainTitle.innerText = "";
 }
 
 document.querySelectorAll(".clickableEvent").forEach(function (region) {
