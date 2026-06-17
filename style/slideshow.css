@@ -93,7 +93,7 @@
 
 .slider-content {
   position: absolute;
-  top: 70% !important;
+  top: 65% !important;
   left: 5%; 
   transform: translateY(-50%); 
   display: flex;
@@ -105,7 +105,7 @@
 }
 
 .slider-content h2 {
-  font-size: 34px; 
+  font-size: 64px; 
   margin: 0 0 10px 0;
   font-family: 'Neutra', sans-serif;
   color: #000; 
