@@ -77,6 +77,7 @@
 	transform-origin: center;
 	z-index: 999;
 	transform-box: fill-box;
+    cursor: pointer;
 }
 
 .overlayText {
@@ -196,4 +197,72 @@
     color: #DF5151;
     background-color: rgba(0,0,0,0.4);
     border-radius: 10px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 900px) {
+    .mapContainer {
+        flex-direction: column;
+        padding: 100px 5% 40px 5%; 
+    }
+
+    .map {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #_Layer_ {
+        padding-top: 0; 
+    }
+
+    .mapOverlay {
+        width: 100%;
+        margin-top: 20px; 
+    }
+
+    .overlayText {
+        position: relative;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mapOverlay h1 {
+        font-size: 40px;
+        margin-left: 0;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .mapOverlay h2, 
+    .mapOverlay p,
+    .mapContainer h2 {
+        text-align: center !important; 
+        max-width: 100% !important;
+        top: 0;
+        left: 0;
+    }
+
+    #mapThumbnail {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    #lightboxClose {
+        top: 15px;
+        right: 20px;
+        font-size: 30px;
+    }
+
+    .lightbox-prev, .lightbox-next {
+        font-size: 25px;
+        padding: 15px 10px;
+    }
+    
+    .lightbox-prev { left: 5px; }
+    .lightbox-next { right: 5px; }
 }
