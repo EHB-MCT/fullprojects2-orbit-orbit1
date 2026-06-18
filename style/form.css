@@ -31,7 +31,7 @@
 .form-card h2 {
     font-size: 32px;
     margin-bottom: 10px;
-    color: #000;
+    color: black;
 }
 
 .form-card p {
@@ -50,7 +50,7 @@
 .input-group label {
     font-weight: bold;
     margin-bottom: 8px;
-    color: #000;
+    color: black;
 }
 
 .input-group input, .input-group select {
@@ -66,6 +66,7 @@
     border-color: #0081B4; 
     outline: none;
 }
+
 
 .hidden-msg {
     display: none;
