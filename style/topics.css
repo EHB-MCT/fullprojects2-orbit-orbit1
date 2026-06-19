@@ -1,171 +1,180 @@
 .topic-container {
-    padding: 60px 5%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 50px;
-    overflow: hidden;
+	padding: 60px 5%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 50px;
+	overflow: hidden;
 }
 
-.bg-ecologie { background-color: #d1deb9; } 
-.bg-begraven { background-color: #A764B1; } 
-.bg-armoede { background-color: #A3E5FF; }
+.bg-ecologie {
+	background-color: #d1deb9;
+}
+.bg-begraven {
+	background-color: #a764b1;
+}
+.bg-armoede {
+	background-color: #a3e5ff;
+}
 
 /*De cirkel*/
 .topic-quote-box {
-    width: 38%;
-    flex-shrink: 0;
-    margin-left: -6%;
-    position: relative;
-    background-size: contain;
-    background-position: left top;
-    background-repeat: no-repeat;
-    padding: 15% 5% 15% 10%;
-    min-height: 700px;
+	width: 38%;
+	flex-shrink: 0;
+	margin-left: -6%;
+	position: relative;
+	background-size: contain;
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding: 15% 5% 15% 10%;
+	min-height: 700px;
 }
 
 .topic-quote-box h3 {
-    position: absolute;
-    top: 15%;
-    left: 22%;
-    width: 55%;
-    font-size: 24px; 
-    line-height: 1.5;
+	position: absolute;
+	top: 15%;
+	left: 22%;
+	width: 55%;
+	font-size: 24px;
+	line-height: 1.5;
 }
 
 /*Rechterkant*/
 .topic-right-column {
-    width: 62%;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    padding-top: 40px;
+	width: 62%;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	padding-top: 40px;
 }
 
 .topic-text {
-    width: 100%;
+	width: 100%;
 }
 
 .topic-text h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #000;
+	font-size: 36px;
+	margin-bottom: 20px;
+	color: #000;
 }
 
 .topic-text p {
-    font-size: 18px;
-    line-height: 1.6;
+	font-size: 18px;
+	line-height: 1.6;
 }
 
 /*Projectkaart*/
 .project-card {
-    width: 100%;
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    border-radius: 30px;
-    padding: 40px;
-    gap: 30px;
+	width: 100%;
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	border-radius: 30px;
+	padding: 40px;
+	gap: 30px;
 }
 
 .project-text {
-    width: 45%;
+	width: 45%;
 }
 
 .project-text h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+	font-size: 32px;
+	margin-bottom: 20px;
 }
 
 .project-text p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 30px;
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 30px;
 }
 
 .bg-armoede .btn-actie {
-    background-color: #0081B4;
+	background-color: #0081b4;
 }
 .bg-armoede .btn-actie:hover {
-    background-color: #005f80;
+	background-color: #005f80;
 }
 
 .bg-ecologie .btn-actie {
-    background-color: #4A7A3A; 
+	background-color: #4a7a3a;
 }
 .bg-ecologie .btn-actie:hover {
-    background-color: #355e28;
+	background-color: #355e28;
 }
 
 .bg-begraven .btn-actie {
-    background-color: #8E0A9D;
+	background-color: #8e0a9d;
 }
 .bg-begraven .btn-actie:hover {
-    background-color: #63056e;
+	background-color: #63056e;
 }
 
 .btn-actie {
-    display: inline-block;
-    padding: 12px 32px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: 0.3s ease;
-    color: black;
+	display: inline-block;
+	padding: 12px 32px;
+	border-radius: 8px;
+	text-decoration: none;
+	font-size: 16px;
+	transition: 0.3s ease;
+	color: black;
 }
 
 .btn-actie:hover {
-    transform: translateY(-2px);
+	transform: translateY(-2px);
 }
 
 .project-images {
-    width: 50%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+	width: 50%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
 }
 
 .project-images img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
 }
 
 .img-wide {
-    grid-column: span 2; 
-    aspect-ratio: 21 / 9;
+	grid-column: span 2;
+	aspect-ratio: 21 / 9;
 }
 
 /*Responsive*/
 @media screen and (max-width: 900px) {
-    .topic-container {
-        padding: 40px 5%;
-    }
+	.topic-container {
+		padding: 40px 5%;
+	}
 
-    .topic-container, .project-card {
-        flex-direction: column;
-    }
-    
-    .topic-quote-box {
-        width: 105%;
-        margin-left: -5%;
-        min-height: 400px;
-        background-position: left center;
-        padding: 0; 
-    }
+	.topic-container,
+	.project-card {
+		flex-direction: column;
+	}
 
-    .topic-quote-box h3 {
-        position: absolute;
-        top: 10%;
-        left: 5%;
-        font-size: 15px;
-        line-height: 1.4;
-        text-align: left;
-        padding: 0;
-    }
+	.topic-quote-box {
+		width: 105%;
+		margin-left: -5%;
+		min-height: 400px;
+		background-position: left center;
+		padding: 0;
+	}
 
-    .topic-right-column, .project-text, .project-images {
-        width: 100%;
-    }
+	.topic-quote-box h3 {
+		position: absolute;
+		top: 10%;
+		left: 5%;
+		font-size: 14px;
+		line-height: 1.4;
+		text-align: left;
+		padding: 0;
+	}
+
+	.topic-right-column,
+	.project-text,
+	.project-images {
+		width: 100%;
+	}
 }
